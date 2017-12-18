@@ -17,19 +17,15 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "M.S. in Computer Science"
+  institution = "North Carolina State University"
+  year = 2017-ongoing
+
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
-
-[[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "B.E. in Computer Science"
+  institution = "Jawaharlal Nehru Engineering College"
+  year = 2011-2015
  
 +++
 
