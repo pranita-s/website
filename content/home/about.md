@@ -19,13 +19,13 @@ weight = 5
 [[education.courses]]
   course = "M.S. in Computer Science"
   institution = "North Carolina State University"
-  year = 2017-ongoing
+  year = 2017
 
 
 [[education.courses]]
   course = "B.E. in Computer Science"
   institution = "Jawaharlal Nehru Engineering College"
-  year = 2011-2015
+  year = 2011
  
 +++
 
