@@ -1,5 +1,5 @@
 {{ $ := .root }}
-#{{ $page := .page }}
+{{ $page := .page }}
 #{{ $posts_len := len (where (where $.Site.RegularPages "Type" "post") ".Params.notonhomepage" nil) }}
 
 <!-- Blog Posts widget -->
