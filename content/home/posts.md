@@ -7,7 +7,13 @@ date = "2016-04-20T00:00:00"
 
 title = "Experience"
 subtitle = ""
-
+# List your academic interests.
+[interests]
+  interests = [
+    "Artificial Intelligence",
+    "Computational Linguistics",
+    "Information Retrieval"
+  ]
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "M.S. in Computer Science"
