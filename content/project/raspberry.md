@@ -29,21 +29,10 @@ image = "headers/raspberryExtended.jpg"
 +++
 
 * **Introduction**
-	* Conversational user interfaces are becoming increasingly used for a variety of research needs.
-	Some are voice-activated (such as Alexa, Siri, and Google Now), but many are text-oriented chatbots appearing as assistants in the context of a larger application. Text chatbots are being considered for providing help in using our products, but also for improving the legal research experience
-	Given a set of case law and judge data, answer research questions using a text-oriented, conversational interface.
-	For instance, if a user asks "List cases for Judge Lucy Koh", the system would respond with a list of cases where Judge Koh is listed as a presiding judge.
+	* This was my BE project. I was part of team of four.
+	* There has been an upsurge observed in the number of small scale and/or home-based businesses. This has been fueled by the internet which makes it very easy to set up one and offer services from the comfort of one’s home, accompanied by the reduction in costs of hardware devices in recent times. However, there are a myriad of networking needs of such offices in order to function smoothly, and most of them are expensive. Some of the most commonly needed ones are an always online file server, an intra-organization email server, a web server and a virtual private network service to stay secure online. We look at a way to cater to these networking needs by providing a solution which is cost effective and involves very low maintenance. 
 
-* **Test Cases**
-	* U: List cases handled by Judge ADAMS
-	*  B: THERE ARE 6 JUDGES with Llast name ADAMS and 2 JUDGES with FIRST NAME
-	*  U: Last name ADAMS
-	*  B: There are only 2 JUDGES with last name ADAMS who are currently on service with first name Henry Lee in Florida and John R in state of OHIO.
-	*  U: The one in state of OHIO
-	*  B: There were 0 cases handled by the judge
-
-
-* **Team's Solution**
-	* We trained DialogFlow with the provided data and then integrated it with Amazon Alexa as a medium of conversation. To accomplish this we used DialogFlow's Alexa Exporter and Amazon Developer Dashboard. After training DialogFlow with the data, we generated Alexa compatible files and then used these files to create a new skill for Alexa.
-* **My Role**
-	* I trained DialogFlow with help of the data by creating appropriate intents, entities and actions. 
+* **Our Solution**
+	* To propose a fulfillment of the above requirements, we used Raspberry Pi. It is a mini computer which can be configured as Web Server, File Server, Email server and VPN at the same time. Being a cheaper alternative and having diverse capabailities, it posed as a great solution.
+	* We carried out its performace testing in the Central Computer Lab of our college with more than 150 students using the hosted servers at the same time.
+	* More details can be seen at https://drive.google.com/file/d/1BiNaEVf0Hmayupoy5CkdALoDRIPvuvL8/view?usp=sharing
