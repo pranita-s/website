@@ -1,4 +1,13 @@
 +++
+# Recent Posts widget.
+# This widget displays recent posts from `content/post/`.
+widget = "posts"
+active = true
+date = "2016-04-20T00:00:00"
+
+title = "Experience"
+subtitle = ""
+
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "M.S. in Computer Science"
