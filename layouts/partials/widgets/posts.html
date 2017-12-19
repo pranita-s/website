@@ -3,6 +3,7 @@
 <!--{{ $posts_len := len (where (where $.Site.RegularPages "Type" "post") ".Params.notonhomepage" nil) }}-->
 
 <!-- Blog Posts widget -->
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="{{ if $.Site.Params.email }}person-email{{ end }}{{ if $.Site.Params.phone }} person-telephone{{ end }}{{ if $.Site.Params.address}} person-address{{ end }}">
  <div class="col-xs-12 col-md-8" itemprop="description">
 
     {{ $page.Content }}
@@ -39,3 +40,4 @@
 
     </div>
   </div>
+</div>
