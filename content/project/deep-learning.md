@@ -3,13 +3,13 @@
 date = "2016-04-27"
 
 # Project title.
-title = "Deep Learning"
+title = "Conversational bot with Amazon Alexa"
 
 # Project summary to display on homepage.
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "bubbles.jpg"
+image_preview = "alexa.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,7 +23,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/bubbles-wide.jpg"
+image = "headers/Alexa_Home_Banner.jpg"
 caption = "My caption :smile:"
 
 +++
