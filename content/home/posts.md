@@ -22,22 +22,7 @@ weight = 40
   course = "B.E. in Computer Science"
   institution = "Jawaharlal Nehru Engineering College"
   year = 2011
-       {{ with $page.Params.education }}
-      <div class="col-sm-7">
-        <h3>{{ i18n "education" | markdownify }}</h3>
-        <ul class="ul-edu fa-ul">
-          {{ range .courses }}
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
-              <p class="institution">{{ .institution }}</p>
-            </div>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
+     
 
 +++
 
