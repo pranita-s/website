@@ -1,9 +1,11 @@
 +++
+# Recent Posts widget.
+# This widget displays recent posts from `content/post/`.
 widget = "posts"
 active = true
 date = "2016-04-20T00:00:00"
 
-title = "experience"
+title = "Recent Posts"
 subtitle = ""
 
 
@@ -19,5 +21,7 @@ subtitle = ""
   institution = "Jawaharlal Nehru Engineering College"
   year = 2011
  
++++
+
 +++
 
