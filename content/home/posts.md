@@ -5,29 +5,20 @@ widget = "posts"
 active = true
 date = "2016-04-20T00:00:00"
 
-title = "Experience"
+title = "Recent Posts"
 subtitle = ""
-# List your academic interests.
-[interests]
-  interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
-  ]
-# List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "M.S. in Computer Science"
-  institution = "North Carolina State University"
-  year = 2017
 
+# Order that this section will appear in.
+weight = 40
 
-[[education.courses]]
-  course = "B.E. in Computer Science"
-  institution = "Jawaharlal Nehru Engineering College"
-  year = 2011
- 
+# Filter posts by tag.
+#  By default, show all recent posts.
+#  Filtering example: `tags_include = ["hugo", "academic"]`
+tags_include = []
+tags_exclude = []
+
+# Number of posts to list.
+count = 5
+
 +++
-
-
-
 
