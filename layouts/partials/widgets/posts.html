@@ -13,14 +13,14 @@
     {{ with $page.Params.education }}
       <div class="col-sm-7">
       <!--  <h3>{{ i18n "education" | markdownify }}</h3>-->
-        <h1> "Mphasis, R & D, NEXT Labs"</h1>
+        <h2> Mphasis, R & D, NEXT Labs</h2>
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
           <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
+           <!-- <i class="fa-li fa fa-graduation-cap"></i>-->
             <div class="description">
-              <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
-              <p class="institution">{{ .institution }}</p>
+              <p class="course">Intern, July 2015-September 2015</p>
+              <!--<p class="institution">{{ .institution }}</p>-->
             </div>
           </li>
           {{ end }}
