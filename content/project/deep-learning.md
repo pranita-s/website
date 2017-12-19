@@ -36,14 +36,14 @@ caption = "My caption :smile:"
 
 * **Test Cases**
 	* U: List cases handled by Judge ADAMS
-	  B: THERE ARE 6 JUDGES with Llast name ADAMS and 2 JUDGES with FIRST NAME
-	  U: Last name ADAMS
-	  B: There are only 2 JUDGES with last name ADAMS who are currently on service with first name Henry Lee in Florida and John R in state of OHIO.
-	  U: The one in state of OHIO
-	  B: There were 0 cases handled by the judge
+	*  B: THERE ARE 6 JUDGES with Llast name ADAMS and 2 JUDGES with FIRST NAME
+	*  U: Last name ADAMS
+	*  B: There are only 2 JUDGES with last name ADAMS who are currently on service with first name Henry Lee in Florida and John R in state of OHIO.
+	*  U: The one in state of OHIO
+	*  B: There were 0 cases handled by the judge
 
 
 * **Team's Solution**
-	* 
-
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+	* We trained DialogFlow with the provided data and then integrated it with Amazon Alexa as a medium of conversation. To accomplish this we used DialogFlow's Alexa Exporter and Amazon Developer Dashboard. After training DialogFlow with the data, we generated Alexa compatible files and then used these files to create a new skill for Alexa.
+* **My Role**
+	* I trained DialogFlow with help of the data by creating appropriate intents, entities and actions. 
