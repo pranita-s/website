@@ -3,7 +3,10 @@
 <!--{{ $posts_len := len (where (where $.Site.RegularPages "Type" "post") ".Params.notonhomepage" nil) }}-->
 
 <!-- Blog Posts widget -->
+<div class="row1">
+    {{ $page.Content }}
 <div class="row">
+
 {{ with $page.Params.education }}
       <div class="col-sm-7">
         <h3>{{ i18n "education" | markdownify }}</h3>
@@ -20,4 +23,5 @@
         </ul>
       </div>
       {{ end }}
+</div>
 </div>
