@@ -29,21 +29,11 @@ image = "headers/semanticExtended.jpg"
 +++
 
 * **Introduction**
-	* Conversational user interfaces are becoming increasingly used for a variety of research needs.
-	Some are voice-activated (such as Alexa, Siri, and Google Now), but many are text-oriented chatbots appearing as assistants in the context of a larger application. Text chatbots are being considered for providing help in using our products, but also for improving the legal research experience
-	Given a set of case law and judge data, answer research questions using a text-oriented, conversational interface.
-	For instance, if a user asks "List cases for Judge Lucy Koh", the system would respond with a list of cases where Judge Koh is listed as a presiding judge.
+	* I was part of the team during my tenure at Mphasis NEXT Labs as a Software Engineer.
+	* This project is aimed to summarize grammatically written English document by build a queriable directed graph based on semantics and context (i.e. Event and Action). The query on graph can retrieve information about action and its effect, and entity and its role. We adopted various NLP and text mining methodologies to build the graph and stored the graph in Neo4j for effective information retrieval.
+	* This project involved usage of R and Python programming language, CoreNLP package for finding co-references among sentences, tokenization and POS tagging, Senna framework for Semantic Role Labelling, Semafor for frame-semantic parsing and Neo4j framework for graph querying.
 
-* **Test Cases**
-	* U: List cases handled by Judge ADAMS
-	*  B: THERE ARE 6 JUDGES with Llast name ADAMS and 2 JUDGES with FIRST NAME
-	*  U: Last name ADAMS
-	*  B: There are only 2 JUDGES with last name ADAMS who are currently on service with first name Henry Lee in Florida and John R in state of OHIO.
-	*  U: The one in state of OHIO
-	*  B: There were 0 cases handled by the judge
-
-
-* **Team's Solution**
-	* We trained DialogFlow with the provided data and then integrated it with Amazon Alexa as a medium of conversation. To accomplish this we used DialogFlow's Alexa Exporter and Amazon Developer Dashboard. After training DialogFlow with the data, we generated Alexa compatible files and then used these files to create a new skill for Alexa.
 * **My Role**
-	* I trained DialogFlow with help of the data by creating appropriate intents, entities and actions. 
+	* I implemented co-reference relationship builder using CoreNLP (which internally uses Stanford CoreNLP framework) for replacement of pronouns with their respective nouns.
+	* I translated retrieved relationship between prominent nouns and verbs from the document pre-processing to Neo4j graph
+	* (Team of two) We created a GUI in RShiny for a prototype demonstration

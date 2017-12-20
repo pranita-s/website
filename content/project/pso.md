@@ -29,21 +29,11 @@ image = "headers/psoExtended.jpg"
 +++
 
 * **Introduction**
-	* Conversational user interfaces are becoming increasingly used for a variety of research needs.
-	Some are voice-activated (such as Alexa, Siri, and Google Now), but many are text-oriented chatbots appearing as assistants in the context of a larger application. Text chatbots are being considered for providing help in using our products, but also for improving the legal research experience
-	Given a set of case law and judge data, answer research questions using a text-oriented, conversational interface.
-	For instance, if a user asks "List cases for Judge Lucy Koh", the system would respond with a list of cases where Judge Koh is listed as a presiding judge.
+	* The goal was to exibit the power of PSO with respect to DE as a tuner for SVM. For this comparison, we (a team of three) referred the paper "Easy over hard - A Case Study on Deep Learning" for the problem statement, data and performance metrics. DE has crossover and mutation functions for its implementation. We chose PSO for comparison as it has simpler implementation which revolves around the two update equations for velocity and position of particle. We wrote the code for PSO from scratch in Python. 
 
-* **Test Cases**
-	* U: List cases handled by Judge ADAMS
-	*  B: THERE ARE 6 JUDGES with Llast name ADAMS and 2 JUDGES with FIRST NAME
-	*  U: Last name ADAMS
-	*  B: There are only 2 JUDGES with last name ADAMS who are currently on service with first name Henry Lee in Florida and John R in state of OHIO.
-	*  U: The one in state of OHIO
-	*  B: There were 0 cases handled by the judge
+* **Conclusion**
+	* After testing PSO, we found that its performance metrics are at par with those of DE. But the time it takes for convergence is more, hence it is slightly slower than DE. It can be concluded that PSO can be used instead of DE, depending on the usecase and the important factors.
 
-
-* **Team's Solution**
-	* We trained DialogFlow with the provided data and then integrated it with Amazon Alexa as a medium of conversation. To accomplish this we used DialogFlow's Alexa Exporter and Amazon Developer Dashboard. After training DialogFlow with the data, we generated Alexa compatible files and then used these files to create a new skill for Alexa.
 * **My Role**
-	* I trained DialogFlow with help of the data by creating appropriate intents, entities and actions. 
+	* I contributed in the implementation of PSO algorithm in Python.
+	* Presentation for the same can be seen at - https://docs.google.com/presentation/d/1FCd6igOw26W61A8BTVw7EHkDMXfhQ50d6YtcpuwGTMc/edit?usp=sharing.
