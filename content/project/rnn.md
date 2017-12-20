@@ -9,7 +9,7 @@ title = "Solving Kinematics Word Problem"
 summary = "A Machine Learning and NLP based approach"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "rnn.png"
+image_preview = "rnn.PNG"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -23,7 +23,7 @@ math = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/rnnExtended.png"
+image = "headers/rnnExtended.PNG"
 #caption = "My caption :smile:"
 
 +++
