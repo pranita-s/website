@@ -33,7 +33,7 @@ image = "headers/rnnExtended.PNG"
 		* s = u + a*t
 		* v*v = u*u + 2*a*s
 		* s = u*t + 0.5*a*t*t
-	To achieve this, machine has to identify given entites such as velocity, displacement and time and also identify which entity has to be computed. 
+	* To achieve this, machine has to identify given entites such as velocity, displacement and time and also identify which entity has to be computed. 
 * **Solution**
 	* Existing related research papers concentrate on creating a question template to fit in the given entities and compute the missing one. But this prohibits the question solving capability of the machine to only free fall examples. Hence, I used RNN with LSTM network to train the machine with the questions and the label being the equation to solve it. I used NLP to make the understanding flexible as the machine has to identify details such as "at rest","initial velocity","final velocity","starting from rest" and also entites with different measuring  units such as metres per second, kilometers per hour etc.
 * **Recognition**
