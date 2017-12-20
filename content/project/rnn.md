@@ -38,3 +38,4 @@ image = "headers/rnnExtended.PNG"
 	* Existing related research papers concentrate on creating a question template to fit in the given entities and compute the missing one. But this prohibits the question solving capability of the machine to only free fall examples. Hence, I used RNN with LSTM network to train the machine with the questions and the label being the equation to solve it. I used NLP to make the understanding flexible as the machine has to identify details such as "at rest","initial velocity","final velocity","starting from rest" and also entites with different measuring  units such as metres per second, kilometers per hour etc.
 * **Recognition**
 	* I presented this work at Woman Who Code Conference held in Bangalore,India in March 2017 as a lightening talk speaker.
+	* More details about the work can be seen at https://drive.google.com/file/d/1eWJSIztqPYhv__SGZO6onDPzCbP_i8Qb/view?usp=sharing
