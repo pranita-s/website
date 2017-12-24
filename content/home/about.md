@@ -30,7 +30,7 @@ weight = 5
  
 +++
 
-# Hi !!
+# Hi !
 
 I am currently a Graduate student in Computer Science at NC State University. I have 2 years of industry experience at Mphasis R & D NEXT Labs. I was selected among top 10 across the country to win an internship at the NEXT Labs. During the tenure, I have been involved in Machine Learning, NLP, Distributed and Parallel Platforms. I also presented figment of my work at Woman Who Code Conference 2017, Bangalore,India. 
 
