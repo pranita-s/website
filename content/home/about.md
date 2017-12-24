@@ -11,8 +11,9 @@ weight = 5
 [interests]
   interests = [
     "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Distributed and Parallel Platforms",
+    "Information Retrieval",
+    "Machine Learning"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -29,8 +30,10 @@ weight = 5
  
 +++
 
-# Biography
+# Hi !!
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am currently a Graduate student in Computer Science at NC State University. I have 2 years of industry experience at Mphasis R & D NEXT Labs. I was selected among top 10 across the country to win an internship at the NEXT Labs. During the tenure, I have been involved in Machine Learning, NLP, Distributed and Parallel Platforms. I also presented figment of my work at Woman Who Code Conference 2017, Bangalore,India. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I have primarily work with Python and R languages, AWS and Apache Spark. In my free time, I like to paint, water color being my favourite medium. I am particularly inspired by Joyce Faukler and her work in painting cut crystal and glass. 
+
+
