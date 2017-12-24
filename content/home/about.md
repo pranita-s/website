@@ -34,6 +34,6 @@ weight = 5
 
 I am currently a Graduate student in Computer Science at NC State University. I have 2 years of industry experience at Mphasis R & D NEXT Labs. I was selected among top 10 across the country to win an internship at the NEXT Labs. During the tenure, I have been involved in Machine Learning, NLP, Distributed and Parallel Platforms. I also presented figment of my work at Woman Who Code Conference 2017, Bangalore,India. 
 
-I have primarily work with Python and R languages, AWS and Apache Spark. In my free time, I like to paint, water color being my favourite medium. I am particularly inspired by Joyce Faukler and her work in painting cut crystal and glass. 
+I have primarily work with Python and R languages, AWS and Apache Spark. In my free time, I like to paint, water color being my favourite medium. I am particularly inspired by Joyce Faulknor and her work in painting cut crystal and glass. 
 
 
