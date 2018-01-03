@@ -3,10 +3,10 @@
 date = "2016-04-27"
 
 # Project title.
-title = "SemanticGraf"
+title = "Document Summarization"
 
 # Project summary to display on homepage.
-summary = "English Document Summarization"
+summary = "Noun-Verb Graph"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "semantic.jpg"
