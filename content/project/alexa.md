@@ -3,7 +3,7 @@
 date = "2016-04-27"
 
 # Project title.
-title = "Making Search into Conversation"
+title = "Search into Conversation"
 
 # Project summary to display on homepage.
 summary = "Conversational bot with Amazon Alexa"
