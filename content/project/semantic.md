@@ -3,7 +3,7 @@
 date = "2016-04-27"
 
 # Project title.
-title = "Document Summarization"
+title = "Summarization of Document"
 
 # Project summary to display on homepage.
 summary = "Noun-Verb Graph"
