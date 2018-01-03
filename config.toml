@@ -215,7 +215,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "www.linkedin.com/in/pranita-s"
+    link = "https://www.linkedin.com/in/pranita-s"
 
   [[params.social]]
     icon = "github"
