@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pranita Sharma</title>
+    <link>https://pranita-s.github.io/blog/</link>
+    <description>Recent content on Pranita Sharma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pranita-s.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://pranita-s.github.io/blog/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pranita-s.github.io/blog/getting_started/</guid>
+      <description>+++ title = &amp;ldquo;Academic: the website designer for Hugo&amp;rdquo;
+date = 2016-04-20T00:00:00 lastmod = 2018-01-13T00:00:00 draft = false
+tags = [&amp;ldquo;academic&amp;rdquo;] summary = &amp;ldquo;Create a beautifully simple website or blog in under 10 minutes.&amp;rdquo;
+[header] image = &amp;ldquo;headers/getting-started.png&amp;rdquo; caption = &amp;ldquo;Image credit: Academic&amp;rdquo;
+[[gallery_item]] album = &amp;ldquo;1&amp;rdquo; image = &amp;ldquo;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&amp;quot; caption = &amp;ldquo;Default&amp;rdquo;
+[[gallery_item]] album = &amp;ldquo;1&amp;rdquo; image = &amp;ldquo;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&amp;quot; caption = &amp;ldquo;Ocean&amp;rdquo;
+[[gallery_item]] album = &amp;ldquo;1&amp;rdquo; image = &amp;ldquo;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&amp;quot; caption = &amp;ldquo;Dark&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
