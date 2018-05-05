@@ -4,34 +4,87 @@
 
 <!-- Blog Posts widget -->
 <div class="row">
-  <div class="col-xs-12 col-md-4 section-heading" width= 20%>
+  <div class="col-xs-12 col-md-4 section-heading">
 
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
-
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ if gt $posts_len $page.Params.count }}
+    <p class="view-all">
+      <a href="{{ ($.Site.GetPage "section" "post").Permalink }}">
+        {{ i18n "more_posts" | markdownify }}
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    {{ end }}
 
   </div>
-      <div class="col-sm-7" width = 80%>
-      <!--  <h3>{{ i18n "education" | markdownify }}</h3>-->
-        <h2> Mphasis, R & D, NEXT Labs</h2>
-        <h3 align="left"> Software Engineer, December 2015 - August 2017 </h3>
-        <ul class="ul list">
-      <li>  Optimized algorithms using distributed framework (Apache Spark) and R programming language which resulted in decreasing the execution time by 20 folds </li>
-      <li>  Migration of analytic solutions to cloud based platforms (AWS) for production level </li>
-      <li>  Developed algorithm based on Natural Language Processing for Cognitive Computing Platform </li>
-      <li>  Automation of Amazon Web Services based solutions for interaction between EC2, S3 and local servers for synchronization </li>
-      <li>  Created a functional user interface oriented workflow for NLP algorithms for identifying the best sequence of algorithms for different datasets </li>
-      <li>  Built Random Walk based automata algorithm for Pattern Extraction from sequence data </li>
-       </ul>
-      <h2> Mphasis, R & D, NEXT Labs</h2>
-        <h3 align="left"> Intern, July 2015 - September 2015 </h3>
-        <ul class="ul list">
-      <li>  Developed GUI using Python for automation of data collection and processing for further analytic models </li>
-      <li>  Execution and preparation of data for descriptive analysis and visualization. </li>
-      <li>  Optimize algorithms using Distributed and Parallel computing on cloud – based platforms </li>
-       </ul>
+  <div class="col-xs-12 col-md-8">
 
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
 
+    {{ if gt (len $page.Params.tags_include) 0 }}
+      {{ $posts := where (where (where $.Site.RegularPages "Type" "post") ".Params.tags" "intersect" $page.Params.tags_include) ".Params.notonhomepage" nil }}
 
-      </div>
+      {{ $.Scratch.Add "show_post" "1" }}
+      {{ range $post := first $page.Params.count $posts }}
 
+        {{ $.Scratch.Set "show_post" "1" }}
+
+        {{/* If `tags_include` is set, exclude posts with no tags. */}}
+        {{ if and ($page.Params.tags_include) (lt (len .Params.tags) 1) }}
+          {{ $.Scratch.Set "show_post" "0" }}
+        {{end}}
+
+        {{/* If `tags_exclude` is set, exclude posts. */}}
+        {{ range $key, $val := .Params.tags }}
+          {{ if in $page.Params.tags_exclude $val }}
+          {{ $.Scratch.Set "show_post" "0" }}
+        {{end}}
+      {{end}}
+
+      {{ $show_post := $.Scratch.Get "show_post" }}
+      {{ if ne $show_post "0" }}
+        {{ $params := dict "post" . }}
+        {{ if eq $page.Params.list_format 0 }}
+          {{ partial "post_li_simple" $params }}
+        {{ else }}
+          {{ partial "post_li_detailed" $params }}
+        {{ end }}
+      {{end}}
+
+      {{ end }}
+    {{ else}}
+      {{ $posts := where (where $.Site.RegularPages "Type" "post") ".Params.notonhomepage" nil }}
+
+      {{ $.Scratch.Add "show_post" "1" }}
+      {{ range $post := first $page.Params.count $posts }}
+
+        {{ $.Scratch.Set "show_post" "1" }}
+
+        {{/* If `tags_include` is set, exclude posts with no tags. */}}
+        {{ if and ($page.Params.tags_include) (lt (len .Params.tags) 1) }}
+          {{ $.Scratch.Set "show_post" "0" }}
+        {{end}}
+
+        {{/* If `tags_exclude` is set, exclude posts. */}}
+        {{ range $key, $val := .Params.tags }}
+          {{ if in $page.Params.tags_exclude $val }}
+          {{ $.Scratch.Set "show_post" "0" }}
+        {{end}}
+      {{end}}
+
+      {{ $show_post := $.Scratch.Get "show_post" }}
+      {{ if ne $show_post "0" }}
+        {{ $params := dict "post" . }}
+        {{ if eq $page.Params.list_format 0 }}
+          {{ partial "post_li_simple" $params }}
+        {{ else }}
+          {{ partial "post_li_detailed" $params }}
+        {{ end }}
+      {{end}}
+
+      {{ end }}
+    {{ end }}
+
+  </div>
 </div>
